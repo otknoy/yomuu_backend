@@ -18,4 +18,6 @@ def get_text_feature():
 
 
 if __name__ == '__main__':
-    run(host='localhost', port=8080, debug=True, reloader=True)
+    import os
+    run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    # run(host='localhost', port=8080, debug=True, reloader=True)
