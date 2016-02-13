@@ -3,7 +3,6 @@ import json
 from bottle import hook, route, run, request, response
 
 from yomuu import preprocess
-from yomuu import preprocess
 
 @hook('after_request')
 def enable_cors():
